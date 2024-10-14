@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang = "ru" >
+
+
+<head>
+	<title>Глагол</title>
+	<meta charset = "utf-8" >
+	<meta name = "description" content = "Глагол" >
+ 	<meta name = "keywords" content = "русский язык, глагол" >
+ 	<meta name = "author" content = "Хайрдинов Игорь Юрьевич" >
+ 	<link rel = "Shortcut Icon" href = "Favicon.ico" type = "image/x-icon" >
+	<link rel="stylesheet" href="css/styles.css">
+
+	<style>
+		form{
+			max-width:500px;
+		}
+		input, select, textarea{
+			margin-bottom:10px;
+		}
+		.s{
+		color:red;
+
+	}
+	img {
+  width: 50%;  /* Вы можете выбрать значение по своему усмотрению */
+  height: auto; /* Позволяет сохранить пропорции изображения */
+}
+table , th , td{
+ 			border :  1px solid black ;
+ 			border-collapse :  collapse ;
+		}
+ 		th , td{
+ 			padding :  5px ;
+ 			text-align :  left ;
+		}
+#animimg{
+	position: relative;
+}
+	</style>
+	<script src="js/jquery-3.7.1.js"></script>
+	<script src="js/lab9.js"></script>
+
+</head>
+<body>
+	<header>
+		<h1>Глагол</h1>
+ 	</header>
+	<nav>
+		<ul>
+			<li><a  href = "index.html" >Лаб. 1</a></li>
+			<li><a  href = "lab2.html" >Лаб. 2</a></li>
+			<li><a  href = "lab4.html" >Лаб. 4</a></li>
+			<li><a  href = "lab5.html" >Лаб. 5</a></li>
+			<li><a  href = "lab6.html" >Лаб. 6</a></li>
+			<li><a  href = "lab8.html" >Лаб. 8</a></li>
+			<li><a  href = "lab9.html" >Лаб. 9</a></li>
+			<li><a  href = "lab10.html" >Лаб. 10</a></li>
+
+		</ul>
+	</nav>
+	<main>
+		<div>Примеры глаголов представлены ниже</div>
+	<ol>
+    <li>Гулять</li>
+    <li>Спать</li>
+    <li>Читать</li>
+  </ol>
+  <form><label>
+	<fieldset id="group1">
+        <label> Ввести в начало <input type="radio" value="start" name="group1"></label>
+        <label> Ввести в конец <input type="radio" value="end" name="group1"></label>
+    </fieldset>
+</label>
+  <label>Введите слово
+    <input type="text" id="slovo">
+  </label>
+<button type ="button" id="vvod">Добавить слово</button>
+<button type="button" id="delete">Очистить поле</button><br>
+<button type="button" id="clone">Клонировать абзац</button>
+</form>
+<div class="target" id="cont">
+<p class="source">Глаголы в изъявительном наклонении описывают действия, которые происходят, происходили или будут происходить на самом деле. Глаголы в изъявительном наклонении изменяются по временам. В настоящем и будущем времени гласная конца основы неопределенной формы иногда отсекается, например: видеть — вижу. В изъявительном наклонении глаголы несовершенного вида имеют три времени: настоящее, прошедшее и будущее сложное, а глаголы совершенного вида — два времени: прошедшее и будущее простое.</p>
+</div>
+<div>
+	<img src="img/glagol.jpg" class="fox"><br>
+	<button type="button" id="reduce">Уменьшить размер</button><br>
+<button type="button" id="deleteimg">Удалить изображение</button>
+</div>
+<div>
+	Что может яблоко? Что можно сделать с яблоком (глаголы)?
+Подбор глаголов к слову на основе русского языка:
+
+упасть, оказаться, падать, лежать, расти, очистить, покатиться, казаться, раскатиться, дернуться, лопнуть, закатиться, потечь, съесть, выпасть, сморщиться, ударить, делать, являться, задвигаться, двигаться, висеть, посыпаться, запекать, поворачиваться, кончиться, вращаться, исчезнуть, воровать, есть, прыгать, вывалиться, очищать, наполнить, превратиться, вырасти, храниться, появляться, виднеться, стоить, удариться, созреть, оставаться, продолжать, подпрыгнуть, светиться, натереть, выкатиться, вылезти, поспеть, сорваться, сниться, заходить, остаться, повернуться, катиться, рассыпаться, свисать, дергаться, хрустнуть, приобрести.
+</div>
+<div>
+	<img src="img/apple.jpg" class="animimg"><br>
+	<button type="button" id="anim">Запустить анимацию</button><br>
+</div>
+<table id="example">
+    <thead>
+        <tr>
+            <th>Местоимение</th>
+            <th>Читать</th>
+            <th>Рисовать</th>
+            <th>Спать</th>
+        </tr>
+    </thead>
+    <tbody>
+    	<tr class='table-filters'>
+        <td>
+            <input type="text"/>
+        </td>
+        <td>
+            <input type="text"/>
+        </td>
+        <td>
+            <input type="text"/>
+        </td>
+        <td>
+            <input type="text"/>
+        </td>
+    </tr>
+        <tr class='table-data'>
+            <td>я</td>
+            <td>читаю</td>
+            <td>рисую</td>
+            <td>сплю</td>
+        </tr>
+        <tr class='table-data'>
+            <td>мы</td>
+            <td>читаем</td>
+            <td>рисуем</td>
+            <td>спим</td>
+        </tr>
+        <tr class='table-data'>
+            <td>ты</td>
+            <td>читаешь</td>
+            <td>рисуешь</td>
+            <td>спишь</td>
+        </tr>
+        <tr class='table-data'>
+            <td>вы</td>
+            <td>читаете</td>
+            <td>рисуете</td>
+            <td>спите</td>
+        </tr>
+        <tr class='table-data'>
+            <td>он/она/оно</td>
+            <td>читает</td>
+            <td>рисует</td>
+            <td>спит</td>
+        </tr>
+        <tr class='table-data'>
+            <td>они</td>
+            <td>читают</td>
+            <td>рисуют</td>
+            <td>спят</td>
+        </tr>
+    </tbody>
+</table>
+        	<label>Отфильтровать эту таблицу можно и только по одному столбцу
+    <!--<input type="text" id="showTrigger">-->
+  </label>
+	<aside>
+		<h2> Навигация </h2>
+		<ul> 
+			<li><a href = "index.html"> Лаб. 1 </a></li>
+ 			<li><a href = "lab2.html" > Лаб. 2 </a></li>
+ 			<li><a href = "lab4.html"> Лаб. 4 </a></li>
+ 			<li><a href = "lab5.html">Лаб. 5</a></li>
+ 			<li><a  href = "lab6.html" >Лаб. 6</a></li>
+			<li><a  href = "lab8.html" >Лаб. 8</a></li>
+			<li><a>Лаб. 9</a></li>
+			<li><a  href = "lab10.html" >Лаб. 9</a></li>
+
+ 			
+ 		</ul>
+
+	</aside>
+	</main>
+	<footer> 
+	<p> Copyright © 2024. Хайрдинов Игорь Юрьевич</p>
+ 	</footer>
+
+
+</body>
+</html>
